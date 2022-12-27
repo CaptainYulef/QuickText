@@ -1,0 +1,489 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="icon" href="../QuickText/qt-icon.png" type="image">
+    <title>QuickText</title>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0;" />
+
+<style>
+@font-face {
+    font-family: timeless;
+    src: url('timeless.ttf');
+}
+@font-face {
+    font-family: lintine;
+    src: url('LinLibertine-Regular.otf');
+}
+@font-face {
+    font-family: volter;
+    src: url('volter.ttf');
+}
+@font-face {
+    font-family: vcr;
+    src: url('VCR.ttf');
+}
+@font-face {
+    font-family: pen;
+    src: url('GelPen.ttf');
+}
+@font-face {
+    font-family: cool;
+    src: url('coolvetica.otf');
+}
+@font-face {
+    font-family: sci;
+    src: url('ComicSci.ttf');
+}
+@font-face {
+    font-family: retro;
+    src: url('Retrocompute.ttf');
+}
+@font-face {
+    font-family: tarvo;
+    src: url('HigginsTarvo.ttf');
+}
+@font-face {
+    font-family: moss;
+    src: url('MossArcher.ttf');
+}
+@font-face {
+    font-family: magic;
+    src: url('MagicArcher.ttf');
+}
+@font-face {
+    font-family: war;
+    src: url('War.ttf');
+}
+@font-face {
+    font-family: harry;
+    src: url('harryp.ttf');
+}
+@font-face {
+    font-family: jedi;
+    src: url('Starjedi.ttf');
+}
+@font-face {
+    font-family: dws;
+    src: url('DarkWonkySerif.ttf');
+}
+@font-face {
+    font-family: future;
+    src: url('FutureBig.otf');
+}
+@font-face {
+    font-family: jk;
+    src: url('Jk.ttf');
+}
+@font-face {
+    font-family: thinweb;
+    src: url('Thinweb.ttf');
+}
+@font-face {
+    font-family: ts;
+    src: url('TestSerif.ttf');
+}
+@font-face {
+    font-family: baker;
+    src: url('Baker.ttf');
+}
+@font-face {
+    font-family: apl;
+    src: url('Alienpixellangua.ttf');
+}
+@font-face {
+    font-family: littlecode;
+    src: url('Littlecode.ttf');
+}
+@font-face {
+    font-family: spaces;
+    src: url('Spacesurvival.ttf');
+}
+@font-face {
+    font-family: cutec;
+    src: url('Cutecubes.ttf');
+}
+@font-face {
+    font-family: minicraft;
+    src: url('Minicraft.ttf');
+}
+@font-face {
+    font-family: fserif;
+    src: url('freeserif.ttf');
+}
+@font-face {
+    font-family: sudbur;
+    src: url('sudbury.ttf');
+}
+@font-face {
+    font-family: kelv;
+    src: url('kelvinch.otf');
+}
+@font-face {
+    font-family: romant;
+    src: url('romanantique.ttf');
+}
+@font-face {
+    font-family: PA;
+    src: url('Pirate Archer.ttf');
+}
+@font-face {
+    font-family: hell;
+    src: url('ahellya.ttf');
+}
+@font-face {
+    font-family: ben;
+    src: url('bentham.otf');
+}
+@font-face {
+    font-family: bell;
+    src: url('belleza.ttf');
+}
+@font-face {
+    font-family: nuskul;
+    src: url('nuskul.ttf');
+}
+@font-face {
+    font-family: goudy;
+    src: url('goudybookletter.otf');
+}
+@font-face {
+    font-family: illogikan;
+    src: url('illogikan.otf');
+}
+@font-face {
+    font-family: mero;
+    src: url('meroitic-hieroglyphics.ttf');
+}
+@font-face {
+    font-family: maze-maker;
+    src: url('softdots.otf');
+}
+
+ .bottom {
+            z-index: -1;
+         }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Alegreya:ital,wght@0,400;0,700;1,400;1,700&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Andika&family=Architects+Daughter&family=Aref+Ruqaa&family=Baskervville:ital@0;1&family=Bebas+Neue&family=Cardo:ital,wght@0,400;0,700;1,400&family=Castoro:ital@0;1&family=Caveat:wght@500&family=Convergence&family=Cormorant:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Eczar&family=Fira+Code&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Homemade+Apple&family=IM+Fell+English:ital@0;1&family=Josefin+Sans&family=Lexend&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Nanum+Myeongjo&family=Noto+Serif+JP&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oswald&family=Sacramento&family=Shadows+Into+Light&family=Simonetta:ital,wght@0,400;0,900;1,400;1,900&family=Sorts+Mill+Goudy:ital@0;1&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:5px;font-family:lexend;" onload="light();add1();">
+
+<div id="tools" style="margin:10px;background-color:#99FFFF;border:2px solid;border-color:#011233;">
+<img src="clear-format.png" style="height:25px;width:25px;background-color:#99ffff;" onclick="resetFont()">
+<img src="italic.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontStyle='italic';">
+<img src="bold.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontWeight='bold';">
+<img src="underline.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.textDecoration='underline';">
+<img src="strike.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.textDecoration='line-through';">
+<img src="small-caps.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontVariant='small-caps';">
+<img src="font.png" style="height:25px;width:25px;" onclick="document.getElementById('fonts').style.display='block';">
+<img src="align-left.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.textAlign='left';">
+<img src="align-center.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.textAlign='center';">
+<img src="align-right.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.textAlign='right';">
+<img src="font-size.png" style="height:25px;width:25px;" onclick="document.getElementById('font-size').style.display='block';">
+
+<div id="font-size" style="position:fixed;top:0px;left:350px;display:none;background-color:#99ffff;border:2px dashed;border-color:#221100;" onclick="document.getElementById('font-size').style.display='none';">
+    <img src="350.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='350%';">
+    <img src="300.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='300%';">
+<img src="250.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='250%';">
+<img src="200.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='200%';">
+<img src="150.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='150%';">
+<img src="100.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='100%';">
+<img src="50.png" style="height:25px;width:25px;" onclick="document.getElementById('text').style.fontSize='50%';">
+<img src="close.png" style="height:25px;width:25px;">
+</div>
+
+<img src="symbol.png" style="height:25px;width:25px;" onclick="document.getElementById('symbols').style.display='block';">
+<div id="symbols" style="position:fixed;top:0px;left:350px;display:none;background-color:#99ffff;border:2px dashed;border-color:#221100;" onclick="document.getElementById('symbols').style.display='none';">
+<img src="em.png" style="height:25px;width:25px;" id="emKey" onclick="inEm('text', '—');">
+<img src="asterism.png" style="height:25px;width:25px;" id="asKey" onclick="inAs('text', '⁂');">
+<img src="ellipsis.png" style="height:25px;width:25px;" id="elKey" onclick="inEl('text', '…');">
+<img src="apostrophe.png" style="height:25px;width:25px;" id="apKey" onclick="inAp('text', '‘’');">
+<img src="quote.png" style="height:25px;width:25px;" id="quKey" onclick="inQu('text', '“”');">
+<img src="interrobang.png" style="height:25px;width:25px;" id="inKey" onclick="inIn('text', '‽');">
+<img src="irony.png" style="height:25px;width:25px;" id="irKey" onclick="inIr('text', '⸮');">
+<img src="close.png" style="height:25px;width:25px;">
+</div>
+
+<div style="position:fixed;top:0px;right:5px;background-color:#99ffff;" class="bottom">
+<img src="tts.png" style="height:25px;width:25px;" onclick="tts()">
+<img src="night.png" style="height:25px;width:25px;" onclick="dark()">
+<img src="day.png" style="height:25px;width:25px;" onclick="light()">
+<img src="hide.png" style="height:25px;width:25px;" onclick="hideText();">
+<img src="clear.png" style="height:25px;width:25px;" onclick="clearContents(text)">
+<img src="save.png" id="save" style="height:25px;width:25px;" onclick="saveText(text.value,'QuickText.txt')">
+<img src="read.png" style="height:25px;width:25px;" onclick="document.getElementById('text').readOnly='read-only';document.getElementById('tools').style.display='none';document.getElementById('lower').style.display='none';document.getElementById('bottom').style.display='block';alert('Click bottom of screen to exit full-screen mode.')">
+<img src="fullscreen.png" id="save" style="height:25px;width:25px;" onclick="document.getElementById('tools').style.display='none';document.getElementById('lower').style.display='none';document.getElementById('bottom').style.display='block';alert('Click bottom of screen to exit full-screen mode.')">
+</div>
+</div>
+
+<div id="fonts" style="overflow-x:hidden;overflow-y:auto;position:fixed;height:210px;top:5px:right:50%;display:none;background-color:#99ffff;border:2px dashed;border-color:#011233;" onclick="document.getElementById('fonts').style.display='none';">
+<p style="font-family:aboreto;" onclick="document.getElementById('text').style.fontFamily='Aboreto';">Aboreto</p>
+<p style="font-family:hell;" onclick="document.getElementById('text').style.fontFamily='hell';">Ahellya</p>
+<p style="font-family:alegreya;" onclick="document.getElementById('text').style.fontFamily='alegreya';">Alegreya</p>
+<p style="font-family:lexend;" onclick="document.getElementById('text').style.fontFamily='apl';">Alien Pixel Langua [caps]</p>
+<p style="font-family:almendra;" onclick="document.getElementById('text').style.fontFamily='almendra';">Almendra</p>
+<p style="font-family:amiri;" onclick="document.getElementById('text').style.fontFamily='Amiri';">Amiri</p>
+<p style="font-family:andika;" onclick="document.getElementById('text').style.fontFamily='andika';">Andika</p>
+<p style="font-family:'Architects Daughter';" onclick="document.getElementById('text').style.fontFamily='Architects Daughter';">Architects Daughter</p>
+<p style="font-family:arial;" onclick="document.getElementById('text').style.fontFamily='arial';">Arial</p>
+<p style="font-family:Aref Ruqaa;" onclick="document.getElementById('text').style.fontFamily='Aref Ruqaa';">Aref Ruqaa</p>
+<p style="font-family:baker;" onclick="document.getElementById('text').style.fontFamily='baker';">BAKER [caps]</p>
+<p style="font-family:baskervville;" onclick="document.getElementById('text').style.fontFamily='baskervville';">Baskervville</p>
+<p style="font-family:'bebas neue';" onclick="document.getElementById('text').style.fontFamily='bebas neue';">Bebas Neue</p>
+<p style="font-family:'bell';" onclick="document.getElementById('text').style.fontFamily='bell';">Belleza</p>
+<p style="font-family:'ben';" onclick="document.getElementById('text').style.fontFamily='ben';">Bentham</p>
+<p style="font-family:bookerly;" onclick="document.getElementById('text').style.fontFamily='bookerly';">Bookerly</p>
+<p style="font-family:Cardo;" onclick="document.getElementById('text').style.fontFamily='Cardo';">Cardo</p>
+<p style="font-family:'castoro';" onclick="document.getElementById('text').style.fontFamily='castoro';">Castoro</p>
+<p style="font-family:caveat;" onclick="document.getElementById('text').style.fontFamily='Caveat';">Caveat</p>
+<p style="font-family:'Convergence';" onclick="document.getElementById('text').style.fontFamily='Convergence';">Convergence</p>
+<p style="font-family:'comic sans';" onclick="document.getElementById('text').style.fontFamily='comic sans';">Comic Sans</p>
+<p style="font-family:sci;" onclick="document.getElementById('text').style.fontFamily='sci';">Comic Sci</p>
+<p style="font-family:cool;" onclick="document.getElementById('text').style.fontFamily='cool';">Coolvetica</p>
+<p style="font-family:Cormorant;" onclick="document.getElementById('text').style.fontFamily='cormorant';">Cormorant</p>
+<p style="font-family:'crimson text';" onclick="document.getElementById('text').style.fontFamily='crimson text';">Crimson Text</p>
+<p style="font-family:cursive;" onclick="document.getElementById('text').style.fontFamily='cursive';">Cursive</p>
+<p style="font-family:cutec;" onclick="document.getElementById('text').style.fontFamily='cutec';">CUTECUBES [caps]</p>
+<p style="font-family:dws;" onclick="document.getElementById('text').style.fontFamily='dws';">Dark Wonky Serif</p>
+<p style="font-family:'dm sans';" onclick="document.getElementById('text').style.fontFamily='dm sans';">DM Sans</p>
+<p style="font-family:'EB Garamond';" onclick="document.getElementById('text').style.fontFamily='EB Garamond';">EB Garamond</p>
+<p style="font-family:'eczar';" onclick="document.getElementById('text').style.fontFamily='eczar';">Eczar</p>
+<p style="font-family:fantasy;" onclick="document.getElementById('text').style.fontFamily='fantasy';">Fantasy</p>
+<p style="font-family:'fira code';" onclick="document.getElementById('text').style.fontFamily='fira code';">Fira Code</p>
+<p style="font-family:fserif;" onclick="document.getElementById('text').style.fontFamily='fserif';">FreeSerif</p>
+<p style="font-family:future;" onclick="document.getElementById('text').style.fontFamily='future';">Future Big</p>
+<p style="font-family:pen;" onclick="document.getElementById('text').style.fontFamily='pen';">GelPen</p>
+<p style="font-family:'gentium plus';" onclick="document.getElementById('text').style.fontFamily='gentium plus';">Gentium Plus</p>
+<p style="font-family:georgia;" onclick="document.getElementById('text').style.fontFamily='georgia';">Georgia</p>
+<p style="font-family:'goudy';" onclick="document.getElementById('text').style.fontFamily='goudy';">Goudy Bookletter 1911</p>
+<p style="font-family:harry;" onclick="document.getElementById('text').style.fontFamily='harry';">Harry P</p>
+<p style="font-family:tarvo;" onclick="document.getElementById('text').style.fontFamily='tarvo';">Higgins Tarvo</p>
+<p style="font-family:'Homemade apple';" onclick="document.getElementById('text').style.fontFamily='homemade apple';">Homemade Apple</p>
+<p style="font-family:illogikan;" onclick="document.getElementById('text').style.fontFamily='illogikan';">Illogikan</p>
+<p style="font-family:'im fell english';" onclick="document.getElementById('text').style.fontFamily='im fell english';">IM Fell English</p>
+<p style="font-family:impact;" onclick="document.getElementById('text').style.fontFamily='impact';">Impact</p>
+<p style="font-family:jk;" onclick="document.getElementById('text').style.fontFamily='jk';">JK</p>
+<p style="font-family:Josefin Sans;" onclick="document.getElementById('text').style.fontFamily='Josefin Sans';">Josefin Sans</p>
+<p style="font-family:kelv;" onclick="document.getElementById('text').style.fontFamily='kelv';">Kelvinch</p>
+<p style="font-family:lexend;" onclick="document.getElementById('text').style.fontFamily='lexend';">Lexend</p>
+<p style="font-family:'libre baskerville';" onclick="document.getElementById('text').style.fontFamily='libre baskerville';">Libre Baskerville</p>
+<p style="font-family:libre caslon text;" onclick="document.getElementById('text').style.fontFamily='libre caslon text';">Libre Caslon Text</p>
+<p style="font-family:lintine;" onclick="document.getElementById('text').style.fontFamily='lintine';">Linux Libertine</p>
+<p style="font-family:littlecode;" onclick="document.getElementById('text').style.fontFamily='littlecode';">Littlecode</p>
+<p style="font-family:magic;" onclick="document.getElementById('text').style.fontFamily='magic';">Magic Archer</p>
+<p style="font-family:'lexend';" onclick="document.getElementById('text').style.fontFamily='Mero';">Meroitic Hieroglyphics</p>
+<p style="font-family:'Merriweather';" onclick="document.getElementById('text').style.fontFamily='Merriweather';">Merriweather</p>
+<p style="font-family:minicraft;" onclick="document.getElementById('text').style.fontFamily='minicraft';">Mini Craft</p>
+<p style="font-family:monospace;" onclick="document.getElementById('text').style.fontFamily='monospace';">Monospace</p>
+<p style="font-family:Montserrat;" onclick="document.getElementById('text').style.fontFamily='Montserrat';">Montserrat</p>
+<p style="font-family:moss;" onclick="document.getElementById('text').style.fontFamily='moss';">Moss Archer</p>
+<p style="font-family:'nanum myeongjo';" onclick="document.getElementById('text').style.fontFamily='nanum myeongjo';">Nanum Myeongjo</p>
+<p style="font-family:'noto serif jp';" onclick="document.getElementById('text').style.fontFamily='noto serif jp';">Noto Serif Japanese</p>
+<p style="font-family:Oswald;" onclick="document.getElementById('text').style.fontFamily='Oswald';">Oswald</p>
+<p style="font-family:'Open Sans';" onclick="document.getElementById('text').style.fontFamily='Open Sans';">Open Sans</p>
+<p style="font-family:nuskul;" onclick="document.getElementById('text').style.fontFamily='nuskul';">Oxford</p>
+<p style="font-family:palatino;" onclick="document.getElementById('text').style.fontFamily='palatino';">Palatino</p>
+<p style="font-family:'romant';" onclick="document.getElementById('text').style.fontFamily='romant';">Parchment MF</p>
+<p style="font-family:'PA';" onclick="document.getElementById('text').style.fontFamily='PA';">Pirate Archer</p>
+<p style="font-family:retro;" onclick="document.getElementById('text').style.fontFamily='retro';">Retrocompute</p>
+<p style="font-family:sacramento;" onclick="document.getElementById('text').style.fontFamily='sacramento';">Sacramento</p>
+<p style="font-family:sans-serif;" onclick="document.getElementById('text').style.fontFamily='sans-serif';">Sans-Serif</p>
+<p style="font-family:serif;" onclick="document.getElementById('text').style.fontFamily='serif';">Serif</p>
+<p style="font-family:'shadows into Light';" onclick="document.getElementById('text').style.fontFamily='shadows into Light';">Shadows Into Light</p>
+<p style="font-family:simonetta;" onclick="document.getElementById('text').style.fontFamily='simonetta';">Simonetta</p>
+<p style="font-family:'maze-maker';" onclick="document.getElementById('text').style.fontFamily='maze-maker';">Soft Dots</p>
+<p style="font-family:'sorts mill goudy';" onclick="document.getElementById('text').style.fontFamily='sorts mill goudy';">Sorts Mill Goudy</p>
+<p style="font-family:'source sans pro';" onclick="document.getElementById('text').style.fontFamily='source sans pro';">Source Sans Pro</p>
+<p style="font-family:spaces;" onclick="document.getElementById('text').style.fontFamily='spaces';">SPACE SURVIVAL [caps]</p>
+<p style="font-family:'special elite';" onclick="document.getElementById('text').style.fontFamily='special elite';">Special Elite</p>
+<p style="font-family:jedi;" onclick="document.getElementById('text').style.fontFamily='jedi';">Starjedi</p>
+<p style="font-family: sudbur;" onclick="document.getElementById('text').style.fontFamily='sudbur';">Sudbury</p>
+<p style="font-family:ts;" onclick="document.getElementById('text').style.fontFamily='ts';">TEST SERIF [caps]</p>
+<p style="font-family:thinweb;" onclick="document.getElementById('text').style.fontFamily='thinweb';">Thinweb</p>
+<p style="font-family:timeless;" onclick="document.getElementById('text').style.fontFamily='timeless';">Timeless</p>
+<p style="font-family:times new roman;" onclick="document.getElementById('text').style.fontFamily='times new roman';">Times New Roman</p>
+<p style="font-family:Ubuntu;" onclick="document.getElementById('text').style.fontFamily='Ubuntu';">Ubuntu</p>
+<p style="font-family:vcr;" onclick="document.getElementById('text').style.fontFamily='vcr';">VCR OSD Mono</p>
+<p style="font-family:verdana;" onclick="document.getElementById('text').style.fontFamily='verdana';">Verdana</p>
+<p style="font-family:volter;" onclick="document.getElementById('text').style.fontFamily='volter';">Volter (Goldfish)</p>
+<p style="font-family:Vollkorn;" onclick="document.getElementById('text').style.fontFamily='Vollkorn';">Vollkorn</p>
+<p style="font-family:war;" onclick="document.getElementById('text').style.fontFamily='war';">War</p>
+</div>
+
+<div id="bottom"  class="bottom" style="display:none;position:fixed;bottom:0px;width:100%;height:25vh;background-color:#998888;opacity:0.15;" onclick="document.getElementById('text').removeAttribute('readonly');document.getElementById('tools').style.display='block';document.getElementById('lower').style.display='block';document.getElementById('bottom').style.display='none';"></div>
+
+<div>
+<center>
+<textarea id="text" spellcheck="false" class="textbox" style="resize:none;width:95%;height:75vh;top:8%;font-size:150%;font-family:lexend;" placeholder="Text goes here...!" oninput="totalChars(this);var audio = new Audio('click.mp3'); audio.loop = false; audio.play();"></textArea>
+</center>
+</div>
+
+<div id="word-counters" style="display:none;position:fixed;background-color:#99ffff;border:2px dashed;border-color:#221100;width:200px;height:200px;right:60px;bottom:5px;" onclick="document.getElementById('word-counters').style.display='none';">
+<p>Chars: <span id="totalChars"> 0</span></p>
+<p id="countWord">Words: 0</p>
+<p>Time: <span id="secs"> 0</span></p>
+</div>
+
+<div id="lower">
+<div>
+<img id="word-counter" src="word-count.png" style="height:25px;width:25px;position:fixed;bottom:5px;right:5px;" onclick="document.getElementById('word-counters').style.display='block';">
+<p id="credit" style="position:fixed;bottom:5px;left:5px;font-size:80%">credit/sources: dafont.com, googlefonts.com, fontspace.com, <a onclick="document.getElementById('credit').style.display='none';">X</a></p>
+</div>
+</div>
+</body>
+</html>
+<script>
+var secs = 0;
+
+function add1() {
+	document.getElementById("secs").innerHTML = secs += 1;
+	var audio = new Audio('tick2.wav'); audio.loop = false; audio.play(); 
+setTimeout(add1, 1000);
+}
+
+function tts() {
+let msg = new SpeechSynthesisUtterance();
+msg.volume = 100;
+msg.pitch = -1;
+msg.rate = 1.2;
+msg.lang = "en";
+msg.text = text.value;
+speechSynthesis.speak(msg);
+}
+
+function count_word( val ){
+var wom = val.match(/\S+/g);
+return {
+words : wom ? wom.length : 0
+};
+}
+var textContent = document.getElementById("text");
+var showWordCount = document.getElementById("countWord");
+textContent.addEventListener("input", function(){
+var v = count_word( this.value );
+showWordCount.innerHTML = (
+"Words: "+ v.words
+);
+}, false);
+
+var totalChars= function(input){
+
+document.getElementById('totalChars').innerHTML= input.value.length;
+
+}
+
+function hideText() {
+   document.getElementById('text').style.color='#866664';
+document.getElementById('text').style.backgroundColor='#866664';
+}
+
+function dark() {
+document.getElementById('text').style.color='#ffff99';
+document.getElementById('text').style.backgroundColor='#332110';
+document.getElementById('word-counters').style.backgroundColor='#332110';
+document.getElementById('word-counters').style.borderColor='#ffff99';
+document.getElementById('fonts').style.backgroundColor='#332110';
+document.getElementById('fonts').style.borderColor='#ffff99';
+document.getElementById('tools').style.filter='invert(100%)';
+document.body.style.backgroundColor='#321100';
+document.getElementById('word-counter').style.filter='invert(100%)';
+document.body.style.color='#ffeedd';
+}
+function light() {
+document.getElementById('text').style.color='#221100';
+document.getElementById('text').style.backgroundColor='#99ffff';
+document.getElementById('word-counters').style.backgroundColor='#99ffff';
+document.getElementById('word-counters').style.borderColor='#011233';
+document.getElementById('fonts').style.backgroundColor='#99ffff';
+document.getElementById('fonts').style.borderColor='#011233';
+document.getElementById('tools').style.filter='invert(0%)';
+document.body.style.backgroundColor='#88eeed';
+document.getElementById('word-counter').style.filter='invert(0%)';
+document.body.style.color='#011233';
+}
+function resetFont() {
+	document.getElementById('text').style.fontFamily='lexend';
+document.getElementById('text').style.fontStyle='normal';
+document.getElementById('text').style.fontWeight='normal';
+document.getElementById('text').style.fontVariant='normal';
+document.getElementById('text').style.textDecoration='none';
+}
+function clearContents(element) {
+  element.value = '';
+}
+var audio = new Audio('clack.mp3'); audio.loop = false; audio.play(); 
+
+function saveText(textToWrite, fileNameToSaveAs)
+    {
+    	var textFileAsBlob = new Blob([textToWrite], {type:'text/plain'}); 
+    	var downloadLink = document.createElement("a");
+    	downloadLink.download = fileNameToSaveAs;
+    	downloadLink.innerHTML = "Download File";
+    	if (window.webkitURL != null)
+    	{
+    		// Chrome allows the link to be clicked
+    		// without actually adding it to the DOM.
+    		downloadLink.href = window.webkitURL.createObjectURL(textFileAsBlob);
+    	}
+    	else
+    	{
+    		// Firefox requires the link to be added to the DOM
+    		// before it can be clicked.
+    		downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+    		downloadLink.onclick = destroyClickedElement;
+    		downloadLink.style.display = "none";
+    		document.body.appendChild(downloadLink);
+    	}
+    
+    	downloadLink.click();
+    }
+
+document.getElementById("text")
+        .ondblclick = function() {
+          let text = document.getElementById("text").value;
+          navigator.clipboard.writeText(text)
+            .then(() => {
+              alert('Text copied to clipboard');
+            })
+            .catch(err => {
+              alert('Error in copying text: ', err);
+            });
+        }
+        
+        function inEm(emKey, text)
+      {
+        var elem = document.getElementById(emKey);
+        elem.value += text;
+      }
+      function inAs(asKey, text)
+      {
+        var elem = document.getElementById(asKey);
+        elem.value += text;
+      }
+      function inEl(elKey, text)
+      {
+        var elem = document.getElementById(elKey);
+        elem.value += text;
+      }
+      function inAp(apKey, text)
+      {
+        var elem = document.getElementById(apKey);
+        elem.value += text;
+      }
+      function inQu(quKey, text)
+      {
+        var elem = document.getElementById(quKey);
+        elem.value += text;
+      }
+      function inIn(inKey, text)
+      {
+        var elem = document.getElementById(inKey);
+        elem.value += text;
+      }
+      function inIr(irKey, text)
+      {
+        var elem = document.getElementById(irKey);
+        elem.value += text;
+      }
+</script>
